@@ -825,7 +825,7 @@
     <header>
         <div class="header-content">
             <div class="logo" onclick="showPage('home')">⚙️ TechParts</div>
-            <input class="search-bar" type="text" placeholder="Search for PC parts...">
+            <input id="search-input" class="search-bar" type="text" placeholder="Search for PC parts...">
             <nav>
                 <div class="nav-section">
                     <button onclick="showPage('home')">Home</button>
@@ -1160,6 +1160,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             displayProducts();
             loadFromLocalStorage();
+            
+            // Setup search functionality
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', function() {
+                searchProducts(this.value);
+            });
         });
 
         // Display Products
@@ -1167,6 +1173,56 @@
             const productsGrid = document.getElementById('products-grid');
             productsGrid.innerHTML = '';
             products.forEach(product => {
+                const productHTML = `
+                    <div class="product-card">
+                        <div class="product-image">${product.icon}</div>
+                        <div class="product-info">
+                            ${product.badge ? `<div class="badge">${product.badge}</div>` : ''}
+                            <div class="product-name">${product.name}</div>
+                            <div class="product-description">${product.description}</div>
+                            <ul class="product-specs">
+                                ${product.specs.map(spec => `<li>${spec}</li>`).join('')}
+                            </ul>
+                            <div class="product-footer">
+                                <div>
+                                    ${product.oldPrice ? `<span class="old-price">$${product.oldPrice}</span>` : ''}
+                                    <span class="price">$${product.price}</span>
+                                </div>
+                                <button class="add-to-cart-btn" onclick="addToCart(${product.id})">Add</button>
+                            </div>
+                            <div class="in-stock">✓ In Stock</div>
+                        </div>
+                    </div>
+                `;
+                productsGrid.innerHTML += productHTML;
+            });
+        }
+
+        // Search Products
+        function searchProducts(query) {
+            const productsGrid = document.getElementById('products-grid');
+            const lowerCaseQuery = query.toLowerCase().trim();
+
+            if (lowerCaseQuery === '') {
+                displayProducts();
+                return;
+            }
+
+            const filteredProducts = products.filter(product => {
+                return product.name.toLowerCase().includes(lowerCaseQuery) || 
+                       product.description.toLowerCase().includes(lowerCaseQuery) ||
+                       product.category.toLowerCase().includes(lowerCaseQuery) ||
+                       product.specs.some(spec => spec.toLowerCase().includes(lowerCaseQuery));
+            });
+
+            productsGrid.innerHTML = '';
+            
+            if (filteredProducts.length === 0) {
+                productsGrid.innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: #666;"><h2>No products found</h2><p>Try searching with different keywords</p></div>';
+                return;
+            }
+
+            filteredProducts.forEach(product => {
                 const productHTML = `
                     <div class="product-card">
                         <div class="product-image">${product.icon}</div>
@@ -1652,4 +1708,3 @@
     </script>
 </body>
 </html>
-
