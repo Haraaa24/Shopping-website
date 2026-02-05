@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechParts - PC Components & Gaming Gear</title>
+    <title>We have TechParts - PC Components & Gaming Gear</title>
     <style>
         * {
             margin: 0;
@@ -849,6 +849,7 @@
         </section>
 
         <div class="container">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #16213e;">We have GPU, PROCESSORS, STORAGE, MEMORY, MOTHERBOARD, AND COOLING SYSTEMS</h2>
             <section class="categories">
                 <div class="category-card">
                     <div class="category-icon">🖥️</div>
@@ -957,8 +958,8 @@
                         <div class="form-group">
                             <select id="shipping-method" onchange="updateShippingCost()">
                                 <option value="standard">Standard Shipping (5-7 days) - Free</option>
-                                <option value="express">Express Shipping (2-3 days) - $15</option>
-                                <option value="overnight">Overnight Shipping - $50</option>
+                                <option value="express">Express Shipping (2-3 days) - $300</option>
+                                <option value="overnight">Overnight Shipping - $1000</option>
                             </select>
                         </div>
 
@@ -987,19 +988,19 @@
                             </div>
                             <div class="summary-item">
                                 <span>Subtotal:</span>
-                                <span>$<span id="subtotal">0.00</span></span>
+                                <span>$<span id="subtotal">0.00</span> PHP</span>
                             </div>
                             <div class="summary-item">
                                 <span>Shipping:</span>
-                                <span>$<span id="shipping-cost">0.00</span></span>
+                                <span>$<span id="shipping-cost">0.00</span> PHP</span>
                             </div>
                             <div class="summary-item">
                                 <span>Tax (10%):</span>
-                                <span>$<span id="tax">0.00</span></span>
+                                <span>$<span id="tax">0.00</span> PHP</span>
                             </div>
                             <div class="summary-item total">
                                 <span>Total:</span>
-                                <span>$<span id="total-amount">0.00</span></span>
+                                <span>$<span id="total-amount">0.00</span> PHP</span>
                             </div>
                             <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
                             <button class="place-order-btn" style="background-color: #999; margin-top: 0.5rem;" onclick="showPage('cart')">Back to Cart</button>
@@ -1068,8 +1069,8 @@
                 description: 'Professional gaming GPU',
                 icon: '🎮',
                 specs: ['16GB GDDR6X Memory', 'Ada Architecture', '2505 MHz Boost Clock'],
-                price: 1099,
-                oldPrice: 1199,
+                price: 21980,
+                oldPrice: 23980,
                 badge: 'On Sale'
             },
             {
@@ -1079,7 +1080,7 @@
                 description: 'High-performance processor',
                 icon: '⚡',
                 specs: ['24 Cores / 32 Threads', '5.8 GHz Boost', 'LGA1700 Socket'],
-                price: 589,
+                price: 11780,
                 oldPrice: null,
                 badge: null
             },
@@ -1090,7 +1091,7 @@
                 description: 'High-speed memory kit',
                 icon: '🧠',
                 specs: ['2 x 16GB Module', '6000 MHz Speed', '36 CAS Latency'],
-                price: 179,
+                price: 3580,
                 oldPrice: null,
                 badge: null
             },
@@ -1101,7 +1102,7 @@
                 description: 'NVMe SSD storage',
                 icon: '💾',
                 specs: ['4TB Capacity', '7,100 MB/s Read', 'PCIe 4.0'],
-                price: 349,
+                price: 6980,
                 oldPrice: null,
                 badge: 'New'
             },
@@ -1112,7 +1113,7 @@
                 description: 'Premium gaming motherboard',
                 icon: '⚙️',
                 specs: ['LGA1700 Socket', 'PCIe 5.0 Support', 'WiFi 7 Enabled'],
-                price: 459,
+                price: 9180,
                 oldPrice: null,
                 badge: null
             },
@@ -1123,7 +1124,7 @@
                 description: '1000W modular PSU',
                 icon: '🔌',
                 specs: ['1000W Power Output', '80+ Gold Rated', 'Fully Modular'],
-                price: 199,
+                price: 3980,
                 oldPrice: null,
                 badge: null
             },
@@ -1134,7 +1135,7 @@
                 description: 'Modern PC case',
                 icon: '📦',
                 specs: ['Tempered Glass', '4x 120mm Fans', 'ATX Compatible'],
-                price: 89,
+                price: 1780,
                 oldPrice: null,
                 badge: null
             },
@@ -1145,9 +1146,1329 @@
                 description: 'Premium air cooler',
                 icon: '🌊',
                 specs: ['12V PWM Fans', 'Ultra-Silent', 'Universal Mount'],
-                price: 79,
-                oldPrice: 99,
+                price: 1580,
+                oldPrice: 1980,
                 badge: 'On Sale'
+            },
+            {
+                id: 9,
+                name: 'RTX 4090',
+                category: 'GPUs',
+                description: 'Flagship gaming GPU',
+                icon: '🎮',
+                specs: ['24GB GDDR6X Memory', 'Full Ada Implementation', '2520 MHz Boost'],
+                price: 29980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 10,
+                name: 'RTX 4070 Ti',
+                category: 'GPUs',
+                description: 'Mid-range gaming GPU',
+                icon: '🎮',
+                specs: ['12GB GDDR6X Memory', 'Ada Architecture', '2610 MHz Boost'],
+                price: 13480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 11,
+                name: 'RTX 4070',
+                category: 'GPUs',
+                description: 'Balanced gaming GPU',
+                icon: '🎮',
+                specs: ['12GB GDDR6 Memory', 'Ada Architecture', '2475 MHz Boost'],
+                price: 10980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 12,
+                name: 'RTX 4060 Ti',
+                category: 'GPUs',
+                description: 'Entry-level gaming GPU',
+                icon: '🎮',
+                specs: ['8GB GDDR6 Memory', 'Ada Architecture', '2535 MHz Boost'],
+                price: 6480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 13,
+                name: 'RTX 4060',
+                category: 'GPUs',
+                description: 'Budget gaming GPU',
+                icon: '🎮',
+                specs: ['8GB GDDR6 Memory', 'Ada Architecture', '2460 MHz Boost'],
+                price: 4980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 14,
+                name: 'RX 7900 XTX',
+                category: 'GPUs',
+                description: 'AMD flagship GPU',
+                icon: '🎮',
+                specs: ['24GB GDDR6 Memory', 'RDNA 3 Architecture', '2500 MHz Boost'],
+                price: 27480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 15,
+                name: 'RX 7900 XT',
+                category: 'GPUs',
+                description: 'AMD high-end GPU',
+                icon: '🎮',
+                specs: ['20GB GDDR6 Memory', 'RDNA 3 Architecture', '2500 MHz Boost'],
+                price: 22980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 16,
+                name: 'RTX 4080',
+                category: 'GPUs',
+                description: 'Professional graphics card',
+                icon: '🎮',
+                specs: ['16GB GDDR6X Memory', 'Ada Architecture', '2505 MHz Boost'],
+                price: 19480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 17,
+                name: 'Arc A770',
+                category: 'GPUs',
+                description: 'Intel discrete GPU',
+                icon: '🎮',
+                specs: ['8GB/16GB GDDR6 Memory', 'Intel Arc', '2400 MHz Boost'],
+                price: 7280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 18,
+                name: 'RTX 4050',
+                category: 'GPUs',
+                description: 'Mobile GPU equivalent',
+                icon: '🎮',
+                specs: ['6GB GDDR6 Memory', 'Ada Architecture', '2550 MHz Boost'],
+                price: 3780,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 19,
+                name: 'RX 6700 XT',
+                category: 'GPUs',
+                description: 'Mid-range AMD GPU',
+                icon: '🎮',
+                specs: ['12GB GDDR6 Memory', 'RDNA 2 Architecture', '2495 MHz Boost'],
+                price: 8980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 20,
+                name: 'RX 6800 XT',
+                category: 'GPUs',
+                description: 'High-end AMD GPU',
+                icon: '🎮',
+                specs: ['16GB GDDR6 Memory', 'RDNA 2 Architecture', '2505 MHz Boost'],
+                price: 18480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 21,
+                name: 'RTX 3060',
+                category: 'GPUs',
+                description: 'Previous gen GPU',
+                icon: '🎮',
+                specs: ['12GB GDDR6 Memory', 'Ampere Architecture', '1777 MHz Boost'],
+                price: 5280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 22,
+                name: 'Intel Core i9-14900K',
+                category: 'Processors',
+                description: 'Latest flagship processor',
+                icon: '⚡',
+                specs: ['24 Cores / 32 Threads', '6.0 GHz Boost', 'LGA1700 Socket'],
+                price: 12980,
+                oldPrice: null,
+                badge: 'New'
+            },
+            {
+                id: 23,
+                name: 'Intel Core i7-14700K',
+                category: 'Processors',
+                description: 'High-end processor',
+                icon: '⚡',
+                specs: ['20 Cores / 28 Threads', '5.6 GHz Boost', 'LGA1700 Socket'],
+                price: 8980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 24,
+                name: 'Intel Core i5-14600K',
+                category: 'Processors',
+                description: 'Mid-range processor',
+                icon: '⚡',
+                specs: ['14 Cores / 20 Threads', '5.5 GHz Boost', 'LGA1700 Socket'],
+                price: 5280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 25,
+                name: 'AMD Ryzen 9 7950X',
+                category: 'Processors',
+                description: 'AMD flagship processor',
+                icon: '⚡',
+                specs: ['16 Cores / 32 Threads', '5.7 GHz Boost', 'AM5 Socket'],
+                price: 11480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 26,
+                name: 'AMD Ryzen 9 7900X',
+                category: 'Processors',
+                description: 'High-end AMD processor',
+                icon: '⚡',
+                specs: ['12 Cores / 24 Threads', '5.6 GHz Boost', 'AM5 Socket'],
+                price: 8280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 27,
+                name: 'AMD Ryzen 7 7700X',
+                category: 'Processors',
+                description: 'Mid-high AMD processor',
+                icon: '⚡',
+                specs: ['8 Cores / 16 Threads', '5.4 GHz Boost', 'AM5 Socket'],
+                price: 5780,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 28,
+                name: 'Intel Core i9-13900KS',
+                category: 'Processors',
+                description: 'Overclocked flagship',
+                icon: '⚡',
+                specs: ['24 Cores / 32 Threads', '6.0 GHz Boost', 'LGA1700 Socket'],
+                price: 13480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 29,
+                name: 'AMD Ryzen 5 7600X',
+                category: 'Processors',
+                description: 'Budget AMD processor',
+                icon: '⚡',
+                specs: ['6 Cores / 12 Threads', '5.3 GHz Boost', 'AM5 Socket'],
+                price: 3980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 30,
+                name: 'Intel Core i3-13100',
+                category: 'Processors',
+                description: 'Entry-level processor',
+                icon: '⚡',
+                specs: ['4 Cores / 8 Threads', '4.5 GHz Boost', 'LGA1700 Socket'],
+                price: 2280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 31,
+                name: 'Intel Core i7-13700K',
+                category: 'Processors',
+                description: 'Previous gen high-end',
+                icon: '⚡',
+                specs: ['16 Cores / 24 Threads', '5.4 GHz Boost', 'LGA1700 Socket'],
+                price: 7480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 32,
+                name: 'AMD Ryzen 9 5950X',
+                category: 'Processors',
+                description: 'Previous gen flagship',
+                icon: '⚡',
+                specs: ['16 Cores / 32 Threads', '4.9 GHz Boost', 'AM4 Socket'],
+                price: 6280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 33,
+                name: 'Corsair DDR5 64GB',
+                category: 'Memory',
+                description: 'Dual channel DDR5 kit',
+                icon: '🧠',
+                specs: ['2 x 32GB Module', '6600 MHz Speed', '32 CAS Latency'],
+                price: 7180,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 34,
+                name: 'G.Skill Trident Z5 32GB',
+                category: 'Memory',
+                description: 'Premium gaming RAM',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '6000 MHz Speed', '30 CAS Latency'],
+                price: 3280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 35,
+                name: 'Kingston Fury Beast 32GB',
+                category: 'Memory',
+                description: 'Budget DDR5 memory',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '5200 MHz Speed', '40 CAS Latency'],
+                price: 2580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 36,
+                name: 'Team T-Force Dark 32GB',
+                category: 'Memory',
+                description: 'Gaming focused RAM',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '5600 MHz Speed', '36 CAS Latency'],
+                price: 2980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 37,
+                name: 'Crucial DDR5 32GB',
+                category: 'Memory',
+                description: 'Reliable memory kit',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '5600 MHz Speed', '28 CAS Latency'],
+                price: 3080,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 38,
+                name: 'A-Data XPG Lancer 32GB',
+                category: 'Memory',
+                description: 'Performance memory',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '6000 MHz Speed', '30 CAS Latency'],
+                price: 3480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 39,
+                name: 'Corsair DDR5 16GB',
+                category: 'Memory',
+                description: 'Single channel DDR5',
+                icon: '🧠',
+                specs: ['16GB Module', '5600 MHz Speed', '36 CAS Latency'],
+                price: 1780,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 40,
+                name: 'Kingston Fury Beast 64GB',
+                category: 'Memory',
+                description: 'Quad channel DDR5 kit',
+                icon: '🧠',
+                specs: ['4 x 16GB Module', '5200 MHz Speed', '40 CAS Latency'],
+                price: 5580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 41,
+                name: 'G.Skill Flare X5 64GB',
+                category: 'Memory',
+                description: 'AMD optimized RAM',
+                icon: '🧠',
+                specs: ['2 x 32GB Module', '6000 MHz Speed', '30 CAS Latency'],
+                price: 6880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 42,
+                name: 'ADATA Prime Ultra 32GB',
+                category: 'Memory',
+                description: 'Budget friendly RAM',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '5200 MHz Speed', '40 CAS Latency'],
+                price: 2280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 43,
+                name: 'Corsair Vengeance 32GB',
+                category: 'Memory',
+                description: 'Previous gen DDR5',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '5600 MHz Speed', '36 CAS Latency'],
+                price: 2780,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 44,
+                name: 'Team Elite Plus 32GB',
+                category: 'Memory',
+                description: 'Entry-level memory',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '4800 MHz Speed', '40 CAS Latency'],
+                price: 2080,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 45,
+                name: 'Samsung 990 Pro 2TB',
+                category: 'Storage',
+                description: 'Mid-capacity NVMe SSD',
+                icon: '💾',
+                specs: ['2TB Capacity', '7,100 MB/s Read', 'PCIe 4.0'],
+                price: 3480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 46,
+                name: 'Samsung 990 Pro 1TB',
+                category: 'Storage',
+                description: 'Entry NVMe SSD',
+                icon: '💾',
+                specs: ['1TB Capacity', '7,100 MB/s Read', 'PCIe 4.0'],
+                price: 1980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 47,
+                name: 'WD Black SN850X 4TB',
+                category: 'Storage',
+                description: 'Western Digital NVMe',
+                icon: '💾',
+                specs: ['4TB Capacity', '7,100 MB/s Read', 'PCIe 4.0'],
+                price: 6480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 48,
+                name: 'Crucial P5 Plus 1TB',
+                category: 'Storage',
+                description: 'Budget NVMe storage',
+                icon: '💾',
+                specs: ['1TB Capacity', '6,600 MB/s Read', 'PCIe 4.0'],
+                price: 1280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 49,
+                name: 'Kingston A3000 2TB',
+                category: 'Storage',
+                description: 'Affordable SSD',
+                icon: '💾',
+                specs: ['2TB Capacity', '6,000 MB/s Read', 'PCIe 4.0'],
+                price: 2580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 50,
+                name: 'ADATA XPG S70 1TB',
+                category: 'Storage',
+                description: 'Performance NVMe',
+                icon: '💾',
+                specs: ['1TB Capacity', '7,100 MB/s Read', 'PCIe 5.0'],
+                price: 1780,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 51,
+                name: 'SK Hynix Platinum P41 2TB',
+                category: 'Storage',
+                description: 'High-capacity NVMe',
+                icon: '💾',
+                specs: ['2TB Capacity', '7,100 MB/s Read', 'PCIe 4.0'],
+                price: 3280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 52,
+                name: 'Sabrent Rocket 4 Plus 1TB',
+                category: 'Storage',
+                description: 'Value NVMe option',
+                icon: '💾',
+                specs: ['1TB Capacity', '7,000 MB/s Read', 'PCIe 4.0'],
+                price: 1180,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 53,
+                name: 'Seagate Game Drive 2TB',
+                category: 'Storage',
+                description: 'External gaming storage',
+                icon: '💾',
+                specs: ['2TB Capacity', '5,000 MB/s Read', 'USB 3.2'],
+                price: 2880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 54,
+                name: 'Transcend 110Q 1TB',
+                category: 'Storage',
+                description: 'Industrial SSD',
+                icon: '💾',
+                specs: ['1TB Capacity', '6,700 MB/s Read', 'PCIe 4.0'],
+                price: 1480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 55,
+                name: 'MSI Mag Coreliquid 240R',
+                category: 'Motherboards',
+                description: 'Mid-range motherboard',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 4.0 Support', 'WiFi 6 Enabled'],
+                price: 5280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 56,
+                name: 'ASUS TUF Gaming Z790',
+                category: 'Motherboards',
+                description: 'Durable gaming board',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 4.0 Support', 'WiFi 6 Enabled'],
+                price: 4680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 57,
+                name: 'Gigabyte Z790 Aorus Master',
+                category: 'Motherboards',
+                description: 'Premium motherboard',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 5.0 Support', 'WiFi 7 Enabled'],
+                price: 8580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 58,
+                name: 'ASRock Z790 Steel Legend',
+                category: 'Motherboards',
+                description: 'Budget premium board',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 4.0 Support', 'WiFi 6 Enabled'],
+                price: 3880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 59,
+                name: 'ASUS ROG Strix B850E',
+                category: 'Motherboards',
+                description: 'AMD high-end board',
+                icon: '⚙️',
+                specs: ['AM5 Socket', 'PCIe 5.0 Support', 'WiFi 7 Enabled'],
+                price: 7980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 60,
+                name: 'MSI MPG B850 Edge WiFi',
+                category: 'Motherboards',
+                description: 'AMD gaming board',
+                icon: '⚙️',
+                specs: ['AM5 Socket', 'PCIe 5.0 Support', 'WiFi 6 Enabled'],
+                price: 5580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 61,
+                name: 'Gigabyte B850 Aorus Elite',
+                category: 'Motherboards',
+                description: 'Mid-range AMD board',
+                icon: '⚙️',
+                specs: ['AM5 Socket', 'PCIe 5.0 Support', 'WiFi 6 Enabled'],
+                price: 4280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 62,
+                name: 'ASUS Prime Z790M Plus',
+                category: 'Motherboards',
+                description: 'mATX motherboard',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 4.0 Support', 'WiFi 5 Enabled'],
+                price: 2980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 63,
+                name: 'MSI Z790 Tomahawk',
+                category: 'Motherboards',
+                description: 'Value gaming board',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 4.0 Support', 'WiFi 6 Enabled'],
+                price: 4080,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 64,
+                name: 'ASRock X870E Steel Legend',
+                category: 'Motherboards',
+                description: 'Premium AMD board',
+                icon: '⚙️',
+                specs: ['AM5 Socket', 'PCIe 5.0 Support', 'WiFi 7 Enabled'],
+                price: 8280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 65,
+                name: 'Corsair RM850x',
+                category: 'Power Supply',
+                description: '850W modular PSU',
+                icon: '🔌',
+                specs: ['850W Power Output', '80+ Gold Rated', 'Fully Modular'],
+                price: 3280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 66,
+                name: 'EVGA SuperNOVA 750 Gt',
+                category: 'Power Supply',
+                description: '750W modular PSU',
+                icon: '🔌',
+                specs: ['750W Power Output', '80+ Gold Rated', 'Fully Modular'],
+                price: 2880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 67,
+                name: 'Seasonic PRIME Titanium 1000W',
+                category: 'Power Supply',
+                description: 'Premium 1000W PSU',
+                icon: '🔌',
+                specs: ['1000W Power Output', '80+ Titanium Rated', 'Fully Modular'],
+                price: 5480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 68,
+                name: 'MSI MPG A1000G PCIE5',
+                category: 'Power Supply',
+                description: '1000W PCIe 5.0 PSU',
+                icon: '🔌',
+                specs: ['1000W Power Output', '80+ Gold Rated', 'PCIe 5.0 Ready'],
+                price: 4280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 69,
+                name: 'be quiet! Straight Power 12 CM 750W',
+                category: 'Power Supply',
+                description: 'Silent 750W PSU',
+                icon: '🔌',
+                specs: ['750W Power Output', '80+ Gold Rated', 'Ultra Quiet'],
+                price: 2680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 70,
+                name: 'Thermaltake Toughpower GF1 650W',
+                category: 'Power Supply',
+                description: 'Budget 650W PSU',
+                icon: '🔌',
+                specs: ['650W Power Output', '80+ Gold Rated', 'Semi-Modular'],
+                price: 1980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 71,
+                name: 'Gigabyte P850GM',
+                category: 'Power Supply',
+                description: '850W gaming PSU',
+                icon: '🔌',
+                specs: ['850W Power Output', '80+ Gold Rated', 'Fully Modular'],
+                price: 3080,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 72,
+                name: 'Corsair RM750x',
+                category: 'Power Supply',
+                description: '750W modular PSU',
+                icon: '🔌',
+                specs: ['750W Power Output', '80+ Gold Rated', 'Fully Modular'],
+                price: 2580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 73,
+                name: 'NZXT HEPHAESTUS 1000W',
+                category: 'Power Supply',
+                description: 'Modular power supply',
+                icon: '🔌',
+                specs: ['1000W Power Output', '80+ Gold Rated', 'Fully Modular'],
+                price: 3980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 74,
+                name: 'Super Flower Leadex Platinum 1200W',
+                category: 'Power Supply',
+                description: 'Premium 1200W PSU',
+                icon: '🔌',
+                specs: ['1200W Power Output', '80+ Platinum Rated', 'Fully Modular'],
+                price: 5980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 75,
+                name: 'Fractal Design North',
+                category: 'Cases',
+                description: 'Compact PC case',
+                icon: '📦',
+                specs: ['Tempered Glass', '2x 120mm Fans', 'Mini ITX Compatible'],
+                price: 1480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 76,
+                name: 'Be Quiet! Dark Base 901',
+                category: 'Cases',
+                description: 'Silent PC case',
+                icon: '📦',
+                specs: ['Tempered Glass', '3x 120mm Fans', 'ATX Compatible'],
+                price: 2280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 77,
+                name: 'Corsair 5000T RGB',
+                category: 'Cases',
+                description: 'Premium gaming case',
+                icon: '📦',
+                specs: ['Tempered Glass', '6x 120mm Fans', 'E-ATX Compatible'],
+                price: 3980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 78,
+                name: 'NZXT H7 Flow',
+                category: 'Cases',
+                description: 'Modern gaming case',
+                icon: '📦',
+                specs: ['Tempered Glass', '3x 120mm Fans', 'ATX Compatible'],
+                price: 1880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 79,
+                name: 'Thermaltake Level 20 HT',
+                category: 'Cases',
+                description: 'High-end gaming case',
+                icon: '📦',
+                specs: ['Tempered Glass', '4x 120mm Fans', 'E-ATX Compatible'],
+                price: 3280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 80,
+                name: 'Lian Li O11 Dynamic EVO',
+                category: 'Cases',
+                description: 'Popular enthusiast case',
+                icon: '📦',
+                specs: ['Tempered Glass', '3x 120mm Fans', 'ATX Compatible'],
+                price: 2480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 81,
+                name: 'Corsair iCUE 4000 Airflow RGB',
+                category: 'Cases',
+                description: 'RGB gaming case',
+                icon: '📦',
+                specs: ['Tempered Glass', '3x 120mm RGB Fans', 'ATX Compatible'],
+                price: 2080,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 82,
+                name: 'Fractal Design Meshify 2',
+                category: 'Cases',
+                description: 'Mesh panel case',
+                icon: '📦',
+                specs: ['Mesh Front', '2x 120mm Fans', 'ATX Compatible'],
+                price: 1680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 83,
+                name: 'Phanteks Eclipse P500A D-RGB',
+                category: 'Cases',
+                description: 'Value RGB case',
+                icon: '📦',
+                specs: ['Tempered Glass', '3x 120mm D-RGB Fans', 'ATX Compatible'],
+                price: 1580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 84,
+                name: 'Enthoo Luxe 2',
+                category: 'Cases',
+                description: 'Premium case design',
+                icon: '📦',
+                specs: ['Tempered Glass', '2x 140mm Fans', 'E-ATX Compatible'],
+                price: 2980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 85,
+                name: 'Cooler Master MasterBox CM694',
+                category: 'Cooling',
+                description: 'Basic air cooler',
+                icon: '🌊',
+                specs: ['Single Fan Design', 'Quiet Operation', 'Universal Mount'],
+                price: 680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 86,
+                name: 'be quiet! Dark Rock Pro 4',
+                category: 'Cooling',
+                description: 'Premium air cooler',
+                icon: '🌊',
+                specs: ['Dual Fan Design', 'Ultra-Silent', 'Universal Mount'],
+                price: 1180,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 87,
+                name: 'NZXT Kraken X93 RGB',
+                category: 'Cooling',
+                description: 'Liquid AIO cooler',
+                icon: '🌊',
+                specs: ['360mm Radiator', 'RGB Lighting', 'Intel/AMD Mount'],
+                price: 2480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 88,
+                name: 'Corsair H150i Elite Capellix',
+                category: 'Cooling',
+                description: 'Premium AIO cooler',
+                icon: '🌊',
+                specs: ['360mm Radiator', 'RGB Lighting', 'Intel/AMD Mount'],
+                price: 2680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 89,
+                name: 'Lian Li Galahad 360 RGB',
+                category: 'Cooling',
+                description: 'All-in-one cooler',
+                icon: '🌊',
+                specs: ['360mm Radiator', 'RGB Lighting', 'Intel/AMD Mount'],
+                price: 2080,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 90,
+                name: 'Intel LGA1700 Tower Cooler',
+                category: 'Cooling',
+                description: 'Budget cooler',
+                icon: '🌊',
+                specs: ['Single Fan', 'Basic Cooling', 'LGA1700 Mount'],
+                price: 480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 91,
+                name: 'Thermalright Peerless Assassin 120 SE',
+                category: 'Cooling',
+                description: 'Budget air cooler',
+                icon: '🌊',
+                specs: ['Dual Fan Design', 'Budget Friendly', 'Universal Mount'],
+                price: 580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 92,
+                name: 'Scythe Mugen 5 Rev. B',
+                category: 'Cooling',
+                description: 'Japanese air cooler',
+                icon: '🌊',
+                specs: ['Single 120mm Fan', 'Quiet Operation', 'Universal Mount'],
+                price: 780,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 93,
+                name: 'Arctic Liquid Freezer II 420',
+                category: 'Cooling',
+                description: 'Value AIO cooler',
+                icon: '🌊',
+                specs: ['420mm Radiator', 'Efficient Cooling', 'Intel/AMD Mount'],
+                price: 1680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 94,
+                name: 'Corsair ML120 RGB',
+                category: 'Cooling',
+                description: 'RGB fan replacement',
+                icon: '🌊',
+                specs: ['120mm Size', 'RGB Lighting', 'Case Fan Mount'],
+                price: 380,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 95,
+                name: 'RTX 2080 Ti',
+                category: 'GPUs',
+                description: 'Legacy GPU',
+                icon: '🎮',
+                specs: ['11GB GDDR6 Memory', 'Turing Architecture', '1665 MHz Boost'],
+                price: 4280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 96,
+                name: 'GTX 1080 Ti',
+                category: 'GPUs',
+                description: 'Previous generation',
+                icon: '🎮',
+                specs: ['11GB GDDR5X Memory', 'Pascal Architecture', '1582 MHz Boost'],
+                price: 3180,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 97,
+                name: 'Intel Core i5-13600K',
+                category: 'Processors',
+                description: 'Mid-range processor',
+                icon: '⚡',
+                specs: ['14 Cores / 20 Threads', '5.1 GHz Boost', 'LGA1700 Socket'],
+                price: 4480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 98,
+                name: 'Intel Core Ulta v Pro',
+                category: 'Processors',
+                description: 'Workstation processor',
+                icon: '⚡',
+                specs: ['16 Cores / 24 Threads', '5.2 GHz Boost', 'LGA1700 Socket'],
+                price: 6980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 99,
+                name: 'AMD Ryzen 3 4100',
+                category: 'Processors',
+                description: 'Budget processor',
+                icon: '⚡',
+                specs: ['4 Cores / 8 Threads', '4.0 GHz Boost', 'AM4 Socket'],
+                price: 1680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 100,
+                name: 'AMD Threadripper 7960X',
+                category: 'Processors',
+                description: 'Workstation flagship',
+                icon: '⚡',
+                specs: ['24 Cores / 48 Threads', '5.3 GHz Boost', 'sWRX5 Socket'],
+                price: 23880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 101,
+                name: 'Kingston DDR4 32GB',
+                category: 'Memory',
+                description: 'Legacy DDR4 memory',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '3200 MHz Speed', '16 CAS Latency'],
+                price: 1680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 102,
+                name: 'GSkill DDR4 64GB',
+                category: 'Memory',
+                description: 'High-capacity DDR4',
+                icon: '🧠',
+                specs: ['4 x 16GB Module', '3600 MHz Speed', '18 CAS Latency'],
+                price: 3480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 103,
+                name: 'Patriot Viper DDR5 32GB',
+                category: 'Memory',
+                description: 'Gaming memory',
+                icon: '🧠',
+                specs: ['2 x 16GB Module', '5600 MHz Speed', '32 CAS Latency'],
+                price: 2880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 104,
+                name: 'OCZ Vector DDR4 16GB',
+                category: 'Memory',
+                description: 'Budget gaming RAM',
+                icon: '🧠',
+                specs: ['16GB Module', '3000 MHz Speed', '16 CAS Latency'],
+                price: 980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 105,
+                name: 'Kioxia Exceria Plus 2TB',
+                category: 'Storage',
+                description: 'Value NVMe SSD',
+                icon: '💾',
+                specs: ['2TB Capacity', '6,100 MB/s Read', 'PCIe 4.0'],
+                price: 2280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 106,
+                name: 'Intel Optane SSD 900P',
+                category: 'Storage',
+                description: 'High-speed storage',
+                icon: '💾',
+                specs: ['480GB Capacity', '5,500 MB/s Read', 'PCIe 3.0'],
+                price: 1980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 107,
+                name: 'Crucial P2 1TB',
+                category: 'Storage',
+                description: 'Budget SSD',
+                icon: '💾',
+                specs: ['1TB Capacity', '5,100 MB/s Read', 'PCIe 3.0'],
+                price: 980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 108,
+                name: 'Gigabyte GP-GSM2NE8256GNTD 256GB',
+                category: 'Storage',
+                description: 'Compact NVMe',
+                icon: '💾',
+                specs: ['256GB Capacity', '3,500 MB/s Read', 'PCIe 3.0'],
+                price: 680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 109,
+                name: 'ASUS ProArt Z790 Creator WiFi',
+                category: 'Motherboards',
+                description: 'Professional motherboard',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 5.0 Support', 'WiFi 7 Enabled'],
+                price: 7880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 110,
+                name: 'MSI MPG Z790I Edge WiFi',
+                category: 'Motherboards',
+                description: 'Mini ITX board',
+                icon: '⚙️',
+                specs: ['LGA1700 Socket', 'PCIe 4.0 Support', 'WiFi 6 Enabled'],
+                price: 3680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 111,
+                name: 'Biostar B850M Steel Legend',
+                category: 'Motherboards',
+                description: 'Budget AMD board',
+                icon: '⚙️',
+                specs: ['AM5 Socket', 'PCIe 4.0 Support', 'WiFi 5 Enabled'],
+                price: 2580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 112,
+                name: 'ASRock H870 Pro RS',
+                category: 'Motherboards',
+                description: 'Productivity board',
+                icon: '⚙️',
+                specs: ['AM5 Socket', 'PCIe 4.0 Support', 'WiFi 5 Enabled'],
+                price: 4280,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 113,
+                name: 'Corsair RM650x',
+                category: 'Power Supply',
+                description: '650W power supply',
+                icon: '🔌',
+                specs: ['650W Power Output', '80+ Gold Rated', 'Fully Modular'],
+                price: 2080,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 114,
+                name: 'Seasonic Focus 550W',
+                category: 'Power Supply',
+                description: '550W modular PSU',
+                icon: '🔌',
+                specs: ['550W Power Output', '80+ Gold Rated', 'Fully Modular'],
+                price: 1580,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 115,
+                name: 'Thermaltake Smart Pro 850W',
+                category: 'Power Supply',
+                description: 'Smart monitoring PSU',
+                icon: '🔌',
+                specs: ['850W Power Output', '80+ Gold Rated', 'Smart Control'],
+                price: 2880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 116,
+                name: 'Antec Earthwatts 750W',
+                category: 'Power Supply',
+                description: 'Eco-friendly PSU',
+                icon: '🔌',
+                specs: ['750W Power Output', '80+ Bronze Rated', 'Semi-Modular'],
+                price: 1680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 117,
+                name: 'XPG INVADER',
+                category: 'Cases',
+                description: 'Compact mini case',
+                icon: '📦',
+                specs: ['Mesh Design', '2x 80mm Fans', 'Mini ITX Compatible'],
+                price: 980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 118,
+                name: 'Corsair Obsidian 500D',
+                category: 'Cases',
+                description: 'Noiseless case',
+                icon: '📦',
+                specs: ['Soundproof', '2x 120mm Fans', 'ATX Compatible'],
+                price: 2780,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 119,
+                name: 'Metallic Gear NEO Air',
+                category: 'Cases',
+                description: 'Mesh airflow case',
+                icon: '📦',
+                specs: ['Mesh Front', '3x 120mm Fans', 'ATX Compatible'],
+                price: 1380,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 120,
+                name: 'Corsair iCUE 5000T',
+                category: 'Cases',
+                description: 'Premium RGB case',
+                icon: '📦',
+                specs: ['RGB Front Panel', '4x 120mm RGB Fans', 'E-ATX Compatible'],
+                price: 3680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 121,
+                name: 'Intel Stock Cooler',
+                category: 'Cooling',
+                description: 'Basic stock cooler',
+                icon: '🌊',
+                specs: ['Stock Thermal Paste', 'Minimal Performance', 'LGA1700 Mount'],
+                price: 180,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 122,
+                name: 'Corsair iCUE H100i PRO XT',
+                category: 'Cooling',
+                description: 'Premium AIO cooler',
+                icon: '🌊',
+                specs: ['360mm Radiator', 'RGB Control', 'Intel/AMD Mount'],
+                price: 2380,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 123,
+                name: 'Cooler Master Hyper 212 EVO',
+                category: 'Cooling',
+                description: 'Popular budget cooler',
+                icon: '🌊',
+                specs: ['Single 120mm Fan', 'Budget Friendly', 'Universal Mount'],
+                price: 480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 124,
+                name: 'NZXT Kraken Z63',
+                category: 'Cooling',
+                description: 'Display AIO cooler',
+                icon: '🌊',
+                specs: ['280mm Radiator', 'LCD Display', 'Intel/AMD Mount'],
+                price: 1980,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 125,
+                name: 'Sabrent Rocket 4 Max 2TB',
+                category: 'Storage',
+                description: 'High-speed NVMe',
+                icon: '💾',
+                specs: ['2TB Capacity', '7,000 MB/s Read', 'PCIe 4.0'],
+                price: 2880,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 126,
+                name: 'MSI MAG X670E-I EDGE WIFI',
+                category: 'Motherboards',
+                description: 'Mini ITX AMD board',
+                icon: '⚙️',
+                specs: ['AM5 Socket', 'PCIe 5.0 Support', 'WiFi 7 Enabled'],
+                price: 4680,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 127,
+                name: 'Super Flower Leadex Titanium 850W',
+                category: 'Power Supply',
+                description: 'Premium titanium PSU',
+                icon: '🔌',
+                specs: ['850W Power Output', '80+ Titanium Rated', 'Fully Modular'],
+                price: 4480,
+                oldPrice: null,
+                badge: null
+            },
+            {
+                id: 128,
+                name: 'Corsair 5000X RGB',
+                category: 'Cases',
+                description: 'Extreme gaming case',
+                icon: '📦',
+                specs: ['Tempered Glass', '4x 120mm RGB Fans', 'E-ATX Compatible'],
+                price: 4280,
+                oldPrice: null,
+                badge: null
             }
         ];
 
@@ -1185,8 +2506,8 @@
                             </ul>
                             <div class="product-footer">
                                 <div>
-                                    ${product.oldPrice ? `<span class="old-price">$${product.oldPrice}</span>` : ''}
-                                    <span class="price">$${product.price}</span>
+                                    ${product.oldPrice ? `<span class="old-price">$${product.oldPrice} PHP</span>` : ''}
+                                    <span class="price">$${product.price} PHP</span>
                                 </div>
                                 <button class="add-to-cart-btn" onclick="addToCart(${product.id})">Add</button>
                             </div>
@@ -1235,8 +2556,8 @@
                             </ul>
                             <div class="product-footer">
                                 <div>
-                                    ${product.oldPrice ? `<span class="old-price">$${product.oldPrice}</span>` : ''}
-                                    <span class="price">$${product.price}</span>
+                                    ${product.oldPrice ? `<span class="old-price">$${product.oldPrice} PHP</span>` : ''}
+                                    <span class="price">$${product.price} PHP</span>
                                 </div>
                                 <button class="add-to-cart-btn" onclick="addToCart(${product.id})">Add</button>
                             </div>
@@ -1305,10 +2626,10 @@
                                 <span>Qty: ${item.quantity}</span>
                                 <button class="qty-btn" onclick="increaseQty(${index})">+</button>
                             </div>
-                            <div>Price: $${item.price.toFixed(2)}</div>
+                            <div>Price: $${item.price.toFixed(2)} PHP</div>
                         </div>
                         <div style="text-align: right;">
-                            <div style="font-size: 1.2rem; font-weight: bold; color: #ff4444; margin-bottom: 0.5rem;">$${itemTotal.toFixed(2)}</div>
+                            <div style="font-size: 1.2rem; font-weight: bold; color: #ff4444; margin-bottom: 0.5rem;">$${itemTotal.toFixed(2)} PHP</div>
                             <button class="remove-btn" onclick="removeFromCart(${index})">Remove</button>
                         </div>
                     </div>
@@ -1320,15 +2641,15 @@
                 <div class="cart-summary">
                     <div class="summary-row">
                         <span>Subtotal:</span>
-                        <span>$${total.toFixed(2)}</span>
+                        <span>$${total.toFixed(2)} PHP</span>
                     </div>
                     <div class="summary-row">
                         <span>Estimated Tax (10%):</span>
-                        <span>$${(total * 0.1).toFixed(2)}</span>
+                        <span>$${(total * 0.1).toFixed(2)} PHP</span>
                     </div>
                     <div class="summary-row total">
                         <span>Total:</span>
-                        <span>$${(total * 1.1).toFixed(2)}</span>
+                        <span>$${(total * 1.1).toFixed(2)} PHP</span>
                     </div>
                     <button class="checkout-btn" onclick="goToCheckout()">Proceed to Checkout</button>
                 </div>
@@ -1386,7 +2707,7 @@
                 html += `
                     <div class="summary-item">
                         <span>${item.name} x ${item.quantity}</span>
-                        <span>$${itemTotal.toFixed(2)}</span>
+                        <span>$${itemTotal.toFixed(2)} PHP</span>
                     </div>
                 `;
             });
